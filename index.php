@@ -30,7 +30,7 @@ function isActiveForm($formName, $activeForm) {
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <a href="admin.php">admin</a>
+        <div class="espacio-register">
         <div class="caja_inicio_sesion">
            <form method="post" action="login_register.php">
             <?= showError($errors['login']); ?>
@@ -45,6 +45,7 @@ function isActiveForm($formName, $activeForm) {
                     <button id="botonchido" type="submit" name="login">Iniciar</button>
                 </div>
             </form>
+        </div>
         </div>
     </body>
 </html>

@@ -30,33 +30,41 @@ function isActiveForm($formName, $activeForm) {
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="style.css">
         <title>Admin</title>
     </head>
     <body>
-        <div class="box">
-			<h1>Bienvenido,<span><?= $_SESSION['name']; ?></span>! :D</h1>
-			<p>Eres un <b>ADMIN</b></p>
-			<button onclick="window.location.href='logout.php'">Cerrar Sesion</button>
-		</div>
-                <div class="caja_inicio_sesion">
-            <h1>Registrar</h1>
-           <form method="post" action="login_register.php">
-            <?= showError($errors['register']); ?>
-            <h3>Nombre</h3>
-		        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" required>
-             <h3>Usuario</h3>
-		        <input type="text" id="Usuario" name="Usuario" placeholder="Usuario" required>
-            <h3>Contraseña</h3>
-                <input type="password" autocomplete="" id="Pass" name="Password" placeholder="Contraseña" required>
-            <h3>Rol</h3>
-            <select name="rol" required>
-                <option value="">--Selecciona un Rol--</option>
-                <option value="user">Usuario</option>
-                <option value="admin">Admin</option>
-            </select>
-                <button id="botonchido" type="submit" name="registrar">Registrar</button>
-            </form>
+        
+        <div class="espacio-register">
+            <div class="box">
+                <h1>Bienvenido,<span><?= $_SESSION['name']; ?></span>! :D</h1>
+                <!-- <h1>Bienvenido, Admin! </h1> -->
+                <p>Eres un <b>ADMIN</b></p>
+                <div class="botones">
+                <button onclick="window.location.href='logout.php'" id="botonchido">Cerrar Sesion</button>
+                </div>
+		    </div>
+            <div class="caja_inicio_sesion">
+                    <h1>Registrar</h1>
+                <form method="post" action="login_register.php">
+                    <?= showError($errors['register']); ?>
+                    <h3>Nombre</h3>
+                        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" required>
+                    <h3>Usuario</h3>
+                        <input type="text" id="Usuario" name="Usuario" placeholder="Usuario" required>
+                    <h3>Contraseña</h3>
+                        <input type="password" autocomplete="" id="Pass" name="Password" placeholder="Contraseña" required>
+                    <h3>Rol</h3>
+                    <select name="rol" required id="opciones">
+                        <option value="">Selecciona un Rol</option>
+                        <option value="user">Usuario</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                    <div class="botones">
+                        <button id="botonchido" type="submit" name="registrar">Registrar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </body>
 </html>
