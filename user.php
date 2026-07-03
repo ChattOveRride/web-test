@@ -18,8 +18,8 @@ if (!isset($_SESSION['username'])){
     <body>
         <div class="espacio-register">
             <div class="box">
-                <h1>Bienvenido,<span><?= $_SESSION['name']; ?></span>! :D</h1>
-                <p>Eres un <b>Usuario</b> lol</p>
+                <h1>Bienvenido,<span><?= $_SESSION['name']; ?></span>!</h1>
+                <p>Eres un <b>Usuario</b></p>
                 <div class="botones">
                 <button onclick="window.location.href='logout.php'" id="botonchido">Cerrar Sesion</button>
                 </div>
