@@ -115,8 +115,10 @@ body {
 }
 .espacio-register{
     padding: 40px;
+    margin: 20px;
     height: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     object-position: center;
     justify-content: space-around;
@@ -135,4 +137,33 @@ body {
     outline: none;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.caja_inicio_sesion{
+    margin: 0px;
+    text-align: center;
+}
+.caja_inicio_sesion h3{
+    text-align: center;
+}
+
+.botones_confi a{
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    height: 50px;
+    background: white;
+    color: #7D7C7C;
+    padding: .5rem;
+    border-radius: 25px;
+    border: 0 solid;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botones_confi{
+    margin: 2rem 0 0 4rem ;
 }
