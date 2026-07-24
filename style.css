@@ -1,5 +1,12 @@
  /* ctrl + shift + R  muy importante*/
-body {
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ body {
     margin: 0;
     padding: 0;
     font-family: monospace;
@@ -81,8 +88,14 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .botones{
+    width: 100%;
+    border: 1px solid yellow;
     margin-top: 13px;
-    display: flex;
+    /* display: flex;
+    flex-direction:row;
+    align-items: center; */
+    object-position: center;
+    justify-content: center;
     align-items: center;
     object-position: center;
     justify-content: center;
@@ -140,6 +153,7 @@ body {
 }
 .caja_inicio_sesion{
     margin: 0px;
+    margin: 20px;
     text-align: center;
 }
 .caja_inicio_sesion h3{
@@ -166,4 +180,29 @@ body {
 
 .botones_confi{
     margin: 2rem 0 0 4rem ;
+}
+#botongoogle{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background: #7D7C7C;
+    border-radius: 25px;
+    border: 1px solid;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logoG{
+    width: 30px;
+    height: auto;
+    margin: 10px;
+    padding: 0;
+}
+.linkgoogle{
+    padding: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
