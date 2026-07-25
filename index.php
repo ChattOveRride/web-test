@@ -41,7 +41,7 @@ function isActiveForm($formName, $activeForm) {
             <h3>Contraseña</h3>
                 <input type="password" autocomplete="" id="Pass" name="Password" placeholder="Contraseña" required>
                 <div class="botones">
-                    <button id="botongoogle" type="submit" name="google"><a href="" class="linkgoogle"><img src="google.svg" alt="google" class="logoG">Iniciar sesíon por google</a></button>
+                    <button id="botongoogle" type="submit" name="google"><a href="google-callback.php" class="linkgoogle"><img src="google.svg" alt="google" class="logoG">Iniciar sesíon por google</a></button>
                     <button id="botonchido" type="submit" name="login">Iniciar</button>
                 </div>
             </form>
