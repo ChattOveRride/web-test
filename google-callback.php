@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 require_once 'config.php';
 require_once 'vendor/autoload.php';
 
@@ -43,6 +44,6 @@ if (!isset($_GET['code'])) {
        //'picture' => $userInfo->picture
     ];
 
-    header("Location: user.php");
+    header("Location: user_e.php");
     exit;
 }
