@@ -19,11 +19,11 @@ $user = $_SESSION["user"];
     <body>
         <div class="espacio-register">
             <div class="box">
-                <h1>Welcome <?= $user['name']; ?></h1>
-                <p>Email: <?= $user['username']; ?></p>
+                
 
-                <h1>Bienvenido,<span><?= $_SESSION['name']; ?></span>!</h1>
-                <p>Eres un <b><span id="nomrol"><?= $_SESSION['role']; ?></span></b></p>
+                <h1>Bienvenido,<span><?= $user['name']; ?></span>!</h1>
+                <!-- <p>Email: <?= $user['username']; ?></p> -->
+                <p>Eres un <b><span id="nomrol"><?= $user['role']; ?></span></b></p>
                 <div class="botones">
                 <button onclick="window.location.href='logout.php'" id="botonchido">Cerrar Sesion</button>
                 </div>

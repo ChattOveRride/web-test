@@ -39,11 +39,13 @@ if (!isset($_GET['code'])) {
 
     $_SESSION['user'] = [
         'name' => $userInfo->name,
-        'username'=> $userInfo->email
-        //'email' => $userInfo->email,  
-       //'picture' => $userInfo->picture
+        'username'=> $userInfo->email,
+        'role'=> $userInfo->role
+  //      'email' => $userInfo->email,  
+  //     'picture' => $userInfo->picture
     ];
 
-    header("Location: user_e.php");
+   header("Location: user_e.php");
     exit;
+   
 }

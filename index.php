@@ -34,8 +34,8 @@ function isActiveForm($formName, $activeForm) {
            <form method="post" action="login_register.php" class="form">
             <?= showError($errors['login']); ?>
              <h1>Login</h1>
-            <h3>Nombre</h3>
-		        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" required>
+            <!-- <h3>Nombre</h3>
+		        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" required> -->
              <h3>Usuario</h3>
 		        <input type="text" id="Usuario" name="Usuario" placeholder="Usuario" required>
             <h3>Contraseña</h3>
