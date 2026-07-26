@@ -7,7 +7,11 @@ if(isset($_POST['registrar'])) {
     $name = $_POST['Nombre'];
     $username = $_POST['Usuario'];
    
-    $password = password_hash($_POST['Password'], PASSWORD_DEFAULT);
+    //$password = password_hash($_POST['Password'], PASSWORD_DEFAULT);
+    $options = [
+        'cost' => 13
+        ];
+    $password = password_hash($_POST['Password'], PASSWORD_BCRYPT, $options);
     $role = $_POST['rol'];
 
     $checkUser = $conn->query("SELECT username FROM users WHERE username = '$username'");

@@ -89,7 +89,6 @@ a{
 }
 .botones{
     width: 100%;
-    border: 1px solid yellow;
     margin-top: 13px;
     /* display: flex;
     flex-direction:row;

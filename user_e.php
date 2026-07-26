@@ -22,8 +22,8 @@ $user = $_SESSION["user"];
                 
 
                 <h1>Bienvenido,<span><?= $user['name']; ?></span>!</h1>
-                <!-- <p>Email: <?= $user['username']; ?></p> -->
-                <p>Eres un <b><span id="nomrol"><?= $user['role']; ?></span></b></p>
+                <p>Email: <?= $user['username']; ?></p>
+                <!-- <p>Eres un <b><span id="nomrol"><?= $user['role']; ?></span></b></p> -->
                 <div class="botones">
                 <button onclick="window.location.href='logout.php'" id="botonchido">Cerrar Sesion</button>
                 </div>
